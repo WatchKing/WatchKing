@@ -1,0 +1,116 @@
+:root {
+  --bg: #1e1e1e;            /* page background */
+  --panel: #2a2a2a;         /* panels, cards */
+  --accent: #0066cc;        /* buttons, highlights */
+  --text: #f0f0f0;          /* main text */
+  --muted: #bbbbbb;         /* secondary text */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.site-header .logo h1 {
+  font-size: 1.5rem;
+}
+
+.telegram-id-container {
+  display: flex;
+  align-items: center;
+}
+
+#telegramIdInput {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  width: 140px;
+}
+
+#saveTelegram {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+#telegramDisplay {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.box {
+  flex: 1;
+  background: var(--panel);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box h2 {
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+/* === You’ll need to replicate and adapt all other kettle.shop sections here === */
+
+.tiers, .how-it-works, .faq {
+  margin-bottom: 3rem;
+}
+
+/* Example for tier cards container */
+.tiers .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.tiers .card {
+  background: var(--panel);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* ...continue styling each section to match kettle.shop/mystery… */
